@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
+  <title>Story Characters</title>
+  <meta name="description" content="Private, offline AI character roleplay that runs entirely on your device.">
+  <meta name="theme-color" content="#0e0f14">
+  <meta name="color-scheme" content="dark">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Stories">
+  <meta name="referrer" content="no-referrer">
+  <link rel="manifest" href="./manifest.json">
+  <link rel="icon" type="image/png" sizes="192x192" href="./icons/icon-192.png">
+  <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header id="topbar">
+    <button id="backBtn" class="icon-btn" aria-label="Back" hidden>&#8249;</button>
+    <div id="title">Stories</div>
+    <button id="statusPill" class="pill" aria-label="Model status">No model</button>
+    <button id="settingsBtn" class="icon-btn" aria-label="Settings">&#9881;</button>
+  </header>
+  <div id="progress" hidden><div id="progressBar"></div><div id="progressText"></div></div>
+  <main id="view"></main>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <div id="sheet" hidden></div>
+  <noscript><p style="padding:20px">This app needs JavaScript.</p></noscript>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
