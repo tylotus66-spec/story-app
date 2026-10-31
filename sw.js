@@ -1,6 +1,6 @@
 // Service worker: caches the app shell so the app opens offline.
 // Model weights are cached separately by WebLLM in Cache Storage ("webllm/*").
-const VERSION = 'v1.1.0';
+const VERSION = 'v1.2.0';
 const CACHE = 'story-shell-' + VERSION;
 const SHELL = [
   './', './index.html', './styles.css', './app.js', './llm.js', './db.js', './presets.js',
